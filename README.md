@@ -6,7 +6,7 @@
 		<br />
 		Taste like Developer
 	</h2>
-	<p align="center">:octocat: home-assistant-tutorial</p>
+	<p align="center">:octocat: home-assistant-tips</p>
 </div>
 
 ---
