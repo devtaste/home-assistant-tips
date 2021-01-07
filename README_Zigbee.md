@@ -40,25 +40,25 @@ subscribe [Taste like Developer](https://www.youtube.com/channel/UCpY9pb4-S0PwCJ
 ![zigbee1](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee1.jpg)
 
 2. 왼쪽 Configuration 탭 -> User -> 오른쪽 하단 +ADD USER 버튼 을 눌러 새 user를 추가해준다. mqtt 라는 메세징 프로토콜을 사용하는 홈어시스턴트 Add-on(Zigbee2mqtt)을 사용하기때문에 user/password는 mqtt/mqtt 로 해주었다.
-![zigbee2](/images/zigbee2)
+![zigbee2](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee2.jpg)
 
 3. 왼쪽 Supervisor 탭 -> 상단 Add-on Store 에서 mqtt검색 후 Mosquitto broker 선택하여 install
-![zigbee3](/images/zigbee3)
+![zigbee3](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee3.jpg)
 
 4. Mosquitto broker Add-on에서 상단 Configuration 탭에서 아래와 같이 configuration 변경 후 Mosquitor broker start.
-![zigbee4](/images/zigbee4)
+![zigbee4](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee4.jpg)
 
 5. 왼쪽 Configuration 탭 -> Integrations -> MQTT 에서 configure 버튼 클릭, 체크박스 선택 후 SEND 버튼 클릭
-![zigbee5](/images/zigbee5)
+![zigbee5](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee5.jpg)
 
 6. 왼쪽 Supervisor 탭 -> 상단 Add-on Store -> 상단 오른쪽 점 3개 -> Repositories -> ***https://github.com/Koenkk/zigbee2mqtt*** 입력 후 ADD 버튼 클릭 -> 새로고침 하면 새롭게 zigbee2mqtt라는 Add-on 생김 -> INSTALL
-![zigbee6](/images/zigbee6)
+![zigbee6](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee6.jpg)
 
-![zigbee7](/images/zigbee7)
+![zigbee7](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee7.jpg)
 
 7. zigbee2mqtt Add-on에서 상단 Configuration 아래와 같이 수정. (permit_join, server, user, password, port 부분) server에서 ip부분은 공유기 내부 네트워크에서 라즈베리파이(홈어시스턴트)가 잡고있는 IP. port는 1. 에서 확인했던 디바이스 경로 (e.g. /dev/serial/by-id/usb-Texas_Instruments_TI_CC2531_USB_CDC___0X00124B0014D98CDD-if00). SAVE 후 zigbee2mqtt start.
 
-![zigbee8](/images/zigbee8)
+![zigbee8](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee8.jpg)
 
 ### Acknowledgments
 subscribers!!
