@@ -35,7 +35,9 @@ subscribe [Taste like Developer](https://www.youtube.com/channel/UCpY9pb4-S0PwCJ
 
 * 홈어시스턴트에 센서 연동
 
-1. 직비 usb 모듈이 정상적으로 라즈베리파이에 연결되어 홈어시스턴트에 잡힌다면, 왼쪽 HACS탭 -> 상단 System -> Host System에서 오른쪽 하단의 점3개 -> Hardware를 누르면 아래 화면과 같이 디바이스가 잡힌것이 보인다.(e.g. /dev/serial/by-id/usb-Texas_Instruments_TI_CC2531_USB_CDC___0X00124B0014D98CDD-if00)
+1. 직비 usb 모듈이 정상적으로 라즈베리파이에 연결되어 홈어시스턴트에 잡힌다면, 왼쪽 HACS탭 -> 상단 System -> Host System에서 오른쪽 하단의 점3개 -> Hardware를 누르면 아래 화면과 같이 디바이스가 잡힌것이 보인다.
+e.g.)
+```/dev/serial/by-id/usb-Texas_Instruments_TI_CC2531_USB_CDC___0X00124B0014D98CDD-if00```
 
 ![zigbee1](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee1.jpg)
 
