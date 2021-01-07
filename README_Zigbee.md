@@ -37,7 +37,7 @@ subscribe [Taste like Developer](https://www.youtube.com/channel/UCpY9pb4-S0PwCJ
 
 1. 직비 usb 모듈이 정상적으로 라즈베리파이에 연결되어 홈어시스턴트에 잡힌다면, 왼쪽 HACS탭 -> 상단 System -> Host System에서 오른쪽 하단의 점3개 -> Hardware를 누르면 아래 화면과 같이 디바이스가 잡힌것이 보인다.(e.g. /dev/serial/by-id/usb-Texas_Instruments_TI_CC2531_USB_CDC___0X00124B0014D98CDD-if00)
 
-![zigbee1](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee1.jpg){: width="70%" height="70%"}
+![zigbee1](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee1.jpg){: width="30%" height="30%"}
 
 2. 왼쪽 Configuration 탭 -> User -> 오른쪽 하단 +ADD USER 버튼 을 눌러 새 user를 추가해준다. mqtt 라는 메세징 프로토콜을 사용하는 홈어시스턴트 Add-on(Zigbee2mqtt)을 사용하기때문에 user/password는 mqtt/mqtt 로 해주었다.
 ![zigbee2](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee2.jpg)
