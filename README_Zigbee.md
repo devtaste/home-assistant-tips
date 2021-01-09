@@ -17,7 +17,7 @@
 ### Prerequisite
 subscribe [Taste like Developer](https://www.youtube.com/channel/UCpY9pb4-S0PwCJBp2r6nOvg)
 
-첫번쨰 문서인 [README.md](https://github.com/devtaste/home-assistant-tips)에서 다루었던 문서를 먼저 읽어서 홈어시스턴트에 대한 전반적인 감을 익힌 후에 시작하면 좋을것 같다.
+첫번째 문서인 [README.md](https://github.com/devtaste/home-assistant-tips)에서 다루었던 문서를 먼저 읽어서 홈어시스턴트에 대한 전반적인 감을 익힌 후에 시작하면 좋을것 같다.
 
 ### Contributor(s)
 - **Taste like Developer** - [Youtube](https://www.youtube.com/channel/UCpY9pb4-S0PwCJBp2r6nOvg)
@@ -66,6 +66,20 @@ e.g.)
 7. zigbee2mqtt Add-on에서 상단 Configuration 아래와 같이 수정. (permit_join, server, user, password, port 부분) server에서 ip부분은 공유기 내부 네트워크에서 라즈베리파이(홈어시스턴트)가 잡고있는 IP. port는 1. 에서 확인했던 디바이스 경로 (e.g. /dev/serial/by-id/usb-Texas_Instruments_TI_CC2531_USB_CDC___0X00124B0014D98CDD-if00). SAVE 후 zigbee2mqtt start.
 
 ![zigbee8](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee8.jpg)
+
+8. 왼쪽 Configuration 탭 -> Integrations에서 MQTT를 확인해본다. 직비 수신 모듈과 가까운 거리에서 각 센서의 연결모드(대부분 각 센서의 버튼을 3초-5초 정도 길게 누르기)를 진행하면, 잠시 후 화면처럼 MQTT에 디바이스 숫자가 하나 증가한다. 기존에 연결된 센서가 없다면 "1 devices and xx entities" 처럼 바뀔것이고, 이미 있다면 숫자가 바뀐다.
+
+![zigbee9](https://github.com/devtaste/home-assistant-tips/blob/master/images/zigbee9.jpg)
+
+* Trouble shooting
+
+1. 메뉴얼을 잘 읽어보고 빠진부분이 없는지 확인해본다.
+2. MQTT, Zigbee2mqtt, homeassistant를 모두 한번씩 재부팅해본다.
+3. 센서 연동이 잘 안될 경우, Integrations에서 MQTT의 CONFIGURE버튼을 누른 뒤 RE-CONFIGURE MQTT 에서 Username과 Password를 새로 생성한 유저(mqtt/mqtt)로 바꾸어 본다.
+4. 왼쪽 Supervisor -> Zigbee2mqtt -> 상단 Log를 눌러서 로그메세지를 확인해보고 분석해본다. 구글에 에러로그를 검색해보면 이미 문제를 겪은사람들과 해결 방법이 충분히 많이 나온다.
+
+
+
 
 ### Acknowledgments
 subscribers!!
